@@ -25,13 +25,13 @@ class windozmain(QMainWindow):
             text = self.ui.tb_1.text()
             for i in range(len(words)):
                 if words[i] == text:
-                    self.ui.tb_2.setText(words[i - 1])
+                    self.ui.tb_2.setText(str(words[i - 1]))
 
         elif self.ui.rb_1.isChecked():
             text = self.ui.tb_1.text()
             for i in range(len(words)):
                 if words[i] == text:
-                    self.ui.tb_2.setText(words[i + 1])
+                    self.ui.tb_2.setText(str(words[i + 1]))
 
 
 if __name__ == "__main__":
